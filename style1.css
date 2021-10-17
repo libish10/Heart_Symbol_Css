@@ -3,21 +3,20 @@
     margin: 0;
     /* box-sizing: border-box; */
 }
-#square {
+#heart {
     height:400px;
     width:400px;
     margin:160px auto;
     transform: rotate(45deg);
-    border: 1px solid red;
+    
     background-color: red;
 }
 
-#square::after{
+#heart::after{
     content: "";
     height: 400px;
     width: 400px;
     border-radius: 50%;
-    border: 1px solid red;
     background-color: red;
     position: absolute;
     bottom: 185px;
@@ -25,14 +24,17 @@
 
 }
 
-#square::before{
+#heart::before{
     content: "";
     height: 400px;
     width: 400px;
     border-radius: 50%;
-    border: 1px solid red;
+  
     background-color: red;
     position: absolute;
     bottom: -1px;
     right: 198px;
+}
+#heart:hover,#heart:hover::before,#heart:hover::after {
+    background-color: green;
 }
